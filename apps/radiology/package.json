@@ -16,11 +16,11 @@
   "dependencies": {
     "@vueuse/core": "^10.1.2",
     "pinia": "^2.0.35",
-    "unplugin-vue-components": "^0.24.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "unplugin-vue-components": "^0.24.1",
     "@playwright/test": "^1.33.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.0",
