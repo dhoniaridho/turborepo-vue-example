@@ -1,14 +1,17 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
 
 import App from './App.vue'
-import router from './router'
 
 const app = createApp(App)
 
-app.use(createPinia())
-app.use(router)
+const plugins = import.meta.glob('./plugins/*.ts', {
+  eager: true
+})
+
+Object.values(plugins).forEach((module: any) => {
+  app.use(module.default)
+})
 
 app.mount('#app')

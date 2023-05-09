@@ -7,4 +7,5 @@ module.exports = {
       rootDir: ["apps/*/"],
     },
   },
+  rules: { "vue/multi-word-component-names": 0 },
 };
